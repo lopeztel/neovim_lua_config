@@ -107,6 +107,25 @@ use {
   use 'folke/which-key.nvim'
   -- Autocomments
   use 'terrortylor/nvim-comment'
+  -- Git signs
+  use 'lewis6991/gitsigns.nvim'
+  -- todo list
+  use {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim",
+    config = function()
+      require("todo-comments").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
+  -- Markdown preview
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
   --Debug Adapter Protocol client
   use 'mfussenegger/nvim-dap'
   use 'rcarriga/nvim-dap-ui'

@@ -75,7 +75,7 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fo', builtin.oldfiles, {})
 vim.keymap.set('n', '<leader>ft', builtin.treesitter, {})
--- vim.keymap.set('n', '<leader>td', '<Cmd>TODOTelescope, {})
+vim.keymap.set('n', '<leader>td', '<Cmd>TodoTelescope<CR>', {})
 vim.keymap.set('n', '<leader>fS', builtin.lsp_workspace_symbols, {})
 vim.keymap.set('n', '<leader>fs', builtin.lsp_document_symbols, {})
 vim.keymap.set('n', '<leader>fd', builtin.diagnostics, {})
@@ -90,3 +90,6 @@ vim.g.floaterm_keymap_prev = '<Leader>th'
 vim.g.floaterm_keymap_next = '<Leader>tl'
 vim.g.floaterm_keymap_toggle = '<Leader>tt'
 
+
+----------------------Markdown preview keymaps-----------------------
+vim.keymap.set('n', '<leader>m', '<Cmd>MarkdownPreviewToggle<CR>', {})
