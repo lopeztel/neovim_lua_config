@@ -12,6 +12,8 @@ These files should be copied and pasted to `~/.config/nvim`
 │   │   └── init.lua
 │   ├── dashboard-config
 │   │   └── init.lua
+│   ├── gitsigns-config
+│   │   └── init.lua
 │   ├── headlines-config
 │   │   └── init.lua
 │   ├── indent-blankline-config
@@ -37,6 +39,10 @@ These files should be copied and pasted to `~/.config/nvim`
 │   ├── shade-config
 │   │   └── init.lua
 │   ├── telescope-config
+│   │   └── init.lua
+│   ├── todo-comments-config
+│   │   └── init.lua
+│   ├── toggleterm-config
 │   │   └── init.lua
 │   ├── transparent-config
 │   │   └── init.lua
