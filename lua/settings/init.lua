@@ -5,7 +5,7 @@ require('impatient')
 local set = vim.opt
 
 -- Floaterm
-vim.g.floaterm_winblend = 0
+vim.g.floaterm_winblend = 1
 
 -- Notifications
 vim.notify = require('notify')
@@ -36,9 +36,8 @@ set.fileencoding = 'utf-8'
 set.termguicolors = true
 
 -- Display relative line numbers and highlight current line/column
--- set.numbers = true
 set.cursorline = true
-set.cursorcolumn = true
+set.number = true
 set.relativenumber = true
 
 -- hidden files shown by default

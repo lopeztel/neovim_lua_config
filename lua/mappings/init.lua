@@ -23,9 +23,9 @@ map('n', '<C-Left>', ':tabpre<CR>', opts)
 map('n', '<C-Right>', ':tabnext<CR>', opts)
 
 ----------------------Buffer Movement----------------------------
--- map('n', 'gb', ':bnext<CR>', opts)
--- map('n', 'gB', ':bprevious<CR>', opts)
--- map('n', 'bd', ':bdelete<CR>', opts)
+map('n', 'gb', ':bnext<CR>', opts)
+map('n', 'gB', ':bprevious<CR>', opts)
+map('n', 'bd', ':bdelete<CR>', opts)
 
 ----------------------Barbar keymaps----------------------------
 -- Move to previous/next
@@ -89,7 +89,6 @@ vim.g.floaterm_keymap_new = '<leader>tn'
 vim.g.floaterm_keymap_prev = '<Leader>th'
 vim.g.floaterm_keymap_next = '<Leader>tl'
 vim.g.floaterm_keymap_toggle = '<Leader>tt'
-
 
 ----------------------Markdown preview keymaps-----------------------
 vim.keymap.set('n', '<leader>m', '<Cmd>MarkdownPreviewToggle<CR>', {})

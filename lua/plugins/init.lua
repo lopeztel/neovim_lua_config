@@ -67,6 +67,7 @@ return require('packer').startup(function()
   }
   --Floating terminal
   use 'voldikss/vim-floaterm'
+  use 'akinsho/toggleterm.nvim'
   -- Autocompletion stuff
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
