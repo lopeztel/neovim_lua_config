@@ -62,6 +62,11 @@ set.listchars:append "trail:~"
 set.listchars:append "tab:»·"
 set.listchars:append "eol:↴"
 
+--clang-format
+vim.g.clang_format_command = 'clang-format'
+vim.g.clang_format_detect_style_file = 1
+vim.g.clang_format_code_style ='google'
+
 -- colorscheme
 vim.g.nord_contrast = true
 vim.g.nord_borders = true

@@ -30,7 +30,8 @@ wk.register({
   D = { "Show diagnostics" },
   K = { "Hover options" },
   c = {
-      f = { "lsp buffer format" },
+      f = { "ClangFormat" },
+      t = { "ClangFormatAutoToggle" },
       },
   e = { "open file explorer" },
   w = {
