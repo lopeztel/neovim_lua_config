@@ -57,6 +57,11 @@ return require('packer').startup(function(use)
       'nvim-treesitter/nvim-treesitter',
     },
   }
+  use {
+    'windwp/nvim-autopairs', --autopairs
+    config = function () require("nvim-autopairs").setup {} end
+  }
+
   use { -- freeze context function/loop at the top
     'nvim-treesitter/nvim-treesitter-context',
     requires = {
@@ -76,7 +81,7 @@ return require('packer').startup(function(use)
       'williamboman/mason-lspconfig.nvim', --gap closing between mason and lspconfig 
       'neovim/nvim-lspconfig', --configs for the Nvim LSP client 
       'jose-elias-alvarez/null-ls.nvim', --Linter & Formatter
-      "jay-babu/mason-null-ls.nvim",
+      "jay-babu/mason-null-ls.nvim", --bindings between null-ls and mason
     },
   }
   --Floating terminal
