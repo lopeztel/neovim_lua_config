@@ -92,8 +92,3 @@ vim.g.floaterm_keymap_toggle = '<Leader>tt'
 
 ----------------------Markdown preview keymaps-----------------------
 vim.keymap.set('n', '<leader>m', '<Cmd>MarkdownPreviewToggle<CR>', {})
-
-----------------------clang-format keymaps-----------------------
-vim.keymap.set('n', '<leader>cf', '<Cmd>ClangFormat<CR>', {})
-vim.keymap.set('v', '<leader>cf', '<Cmd>ClangFormat<CR>', {})
-vim.keymap.set('n', '<leader>ct', '<Cmd>ClangFormatAutoToggle<CR>', {})

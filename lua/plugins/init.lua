@@ -76,6 +76,7 @@ return require('packer').startup(function(use)
       'williamboman/mason-lspconfig.nvim', --gap closing between mason and lspconfig 
       'neovim/nvim-lspconfig', --configs for the Nvim LSP client 
       'jose-elias-alvarez/null-ls.nvim', --Linter & Formatter
+      "jay-babu/mason-null-ls.nvim",
     },
   }
   --Floating terminal
@@ -140,9 +141,6 @@ use {
   use 'rcarriga/nvim-dap-ui'
   use 'rcarriga/cmp-dap'
   use 'theHamsta/nvim-dap-virtual-text'
-
-  --Code Formatter
-  use 'rhysd/vim-clang-format'
 
   if packer_bootstrap then
     require('packer').sync()
