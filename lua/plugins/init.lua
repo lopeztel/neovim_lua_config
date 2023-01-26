@@ -23,8 +23,6 @@ return require('packer').startup(function(use)
       'nvim-tree/nvim-web-devicons', -- optional, for file icons
     },
   }
-  -- nord theme
-  use 'shaunsingh/nord.nvim'
   -- Neovim notifications
   use 'rcarriga/nvim-notify'
   -- Pretty bottom bar
@@ -68,12 +66,16 @@ return require('packer').startup(function(use)
       'nvim-treesitter/nvim-treesitter',
     },
   }
+  -- colorschemes
+  use 'shaunsingh/nord.nvim'
+  use 'EdenEast/nightfox.nvim'
   use { -- nord theme highlighting for treesittern LSP and Telescope
     'andersevenrud/nordic.nvim',
     requires = {
       'nvim-treesitter/nvim-treesitter',
     },
   }
+  use 'folke/tokyonight.nvim'
   -- LSP stuffs
   use {
     'williamboman/mason.nvim',
