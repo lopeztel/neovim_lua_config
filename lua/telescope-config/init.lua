@@ -14,13 +14,9 @@ require('telescope').setup{
   },
   pickers = {
     find_files = {
-      hidden = true --hidden files included
-    },
-    live_grep = {
-      hidden = true --hidden files included
-    },
-    old_files = {
-      hidden = true --hidden files included
+      hidden = true, --hidden files included
+      no_ignore = true,  --files in .gitignore are included
+      no_ignore_parent = true --files in parent directory's .gitignore are included
     },
     diagnostics = {
       bfrnr = 0 --get diagnostics for the current buffer
