@@ -96,4 +96,4 @@ vim.g.nord_enable_sidebar_background = true
 vim.g.nord_italic = true
 vim.g.nord_uniform_diff_background = true
 vim.g.nord_bold = true
-vim.cmd('colorscheme nordfox')
+vim.cmd('colorscheme nord')
