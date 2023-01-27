@@ -76,6 +76,8 @@ return require('packer').startup(function(use)
     },
   }
   use 'folke/tokyonight.nvim'
+  use 'rose-pine/neovim'
+  use 'catppuccin/nvim'
   -- LSP stuffs
   use {
     'williamboman/mason.nvim',
