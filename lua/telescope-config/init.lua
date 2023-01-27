@@ -20,6 +20,9 @@ require('telescope').setup{
     },
     diagnostics = {
       bfrnr = 0 --get diagnostics for the current buffer
+    },
+    colorscheme = {
+      enable_preview = true
     }
     -- Default configuration for builtin pickers goes here:
     -- picker_name = {
