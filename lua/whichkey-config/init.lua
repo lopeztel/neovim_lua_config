@@ -2,48 +2,62 @@ local wk = require("which-key")
 
 wk.register({
   f = {
-        name = "Find operations", -- file group name
-        f = { "files" },
-        g = { "string" },
-        b = { "in buffers" },
-        h = { "in help tags" },
-        s = { "in document symbols" },
-        S = { "in workspace symbols" },
-        o = { "in recent files" },
-        t = { "in treesitter" },
-        c = { "in colorschemes" },
-        d = { "in diagnostics" },
-        q = { "in quickfix list" },
-      },
+    name = "Find operations", -- file group name
+    f = { "files" },
+    g = { "string" },
+    b = { "in buffers" },
+    h = { "in help tags" },
+    s = { "in document symbols" },
+    S = { "in workspace symbols" },
+    o = { "in recent files" },
+    t = { "in treesitter" },
+    c = { "in colorschemes" },
+    d = { "in diagnostics" },
+    q = { "in quickfix list" },
+  },
+  h = {
+    name = "Gitsigns hunk",
+    S = { "stage buffer" },
+    s = { "stage" },
+    R = { "reset buffer" },
+    r = { "reset" },
+    p = { "preview" },
+    B = { "toggle current line blame" },
+    b = { "blame line" },
+    t = { "toggle deleted" },
+    d = { "diffthis" },
+    D = { "diffthis previous commit" },
+  },
   t = {
-        name = "Terminal",
-        n = { "new" },
-        t = { "toggle" },
-        h = { "prev" },
-        l = { "next" },
-        d = { "display TODO list" },
-      },
+    name = "Terminal",
+    n = { "new" },
+    t = { "toggle" },
+    h = { "prev" },
+    l = { "next" },
+    d = { "display TODO list" },
+  },
   ["/"] = {
     name = "Comment",
-    ["/"] = {"line"}
-      },
+    ["/"] = { "line" },
+  },
   D = { "Show diagnostics" },
   K = { "Hover options" },
   c = {
-      f = { "code format" },
-      },
+    f = { "code format" },
+  },
   e = { "open file explorer" },
   w = {
-        name = "Workspace",
-        a = { "add folder" },
-        r = { "remove folder" },
-        l = { "list folders" },
-      },
+    name = "Workspace",
+    a = { "add folder" },
+    r = { "remove folder" },
+    l = { "list folders" },
+  },
   s = {
-        name = "signature",
-        h = { "help" },
-      },
-  }, { prefix = "<leader>" })
+    "search",
+    -- name = "signature",
+    -- h = { "help" },
+  },
+}, { prefix = "<leader>" })
 
 wk.register({
   name = "Go to",
@@ -56,11 +70,11 @@ wk.register({
   I = { "lsp implementation" },
   n = {
     name = "treesitter functions",
-    r = {"smart rename"},
-    d = {"definition"},
-    D = {"list definitions"},
-    ["0"] = {"list definitions table of contents"},
+    r = { "smart rename" },
+    d = { "definition" },
+    D = { "list definitions" },
+    ["0"] = { "list definitions table of contents" },
   },
-  }, { prefix = "g" })
+}, { prefix = "g" })
 
-wk.setup {}
+wk.setup({})

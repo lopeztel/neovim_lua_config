@@ -114,8 +114,7 @@ use {
     }
 }
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
-  -- Shade on unfocused buffers
-  -- use 'sunjon/shade.nvim' -- TODO: Revisit this one
+  use {'nvim-telescope/telescope-ui-select.nvim' }
   -- Indent line indicators
   use 'lukas-reineke/indent-blankline.nvim'
   -- Markdown and orgmode headlines

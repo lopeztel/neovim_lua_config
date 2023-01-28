@@ -155,7 +155,7 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
   -- vim.keymap.set('n', 'gI', vim.lsp.buf.implementation, bufopts)
   vim.keymap.set('n', 'gI', builtin.lsp_implementations, bufopts)
-  vim.keymap.set('n', '<leader>sh', vim.lsp.buf.signature_help, bufopts)
+  -- vim.keymap.set('n', '<leader>sh', vim.lsp.buf.signature_help, bufopts) -- NOTE: commented out since I don't really use markers
   vim.keymap.set('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, bufopts)
   vim.keymap.set('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, bufopts)
   vim.keymap.set('n', '<leader>wl', function()
