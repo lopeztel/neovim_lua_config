@@ -14,6 +14,7 @@ wk.register({
     c = { "in colorschemes" },
     d = { "in diagnostics" },
     q = { "in quickfix list" },
+    l = { "in location list" },
   },
   h = {
     name = "Gitsigns hunk",
@@ -36,6 +37,7 @@ wk.register({
     l = { "next" },
     d = { "display TODO list" },
   },
+  T = { "Trouble" },
   ["/"] = {
     name = "Comment",
     ["/"] = { "line" },

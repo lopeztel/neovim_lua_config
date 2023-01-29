@@ -140,6 +140,9 @@ use {
       {'nvim-lua/plenary.nvim'}
     }
   }
+
+  -- Trouble
+  use { 'folke/trouble.nvim' }
   -- Markdown preview
   use({
     "iamcco/markdown-preview.nvim",

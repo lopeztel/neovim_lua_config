@@ -82,6 +82,7 @@ vim.keymap.set('n', '<leader>fd', builtin.diagnostics, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>fc', builtin.colorscheme, {})
+vim.keymap.set('n', '<leader>fl', builtin.loclist, {})
 vim.keymap.set('n', '<leader>fq', builtin.quickfix, {})
 vim.keymap.set('n', '<leader>s', function()
     -- You can pass additional configuration to telescope to change theme, layout, etc.
@@ -96,6 +97,9 @@ vim.g.floaterm_keymap_new = '<leader>tn'
 vim.g.floaterm_keymap_prev = '<Leader>th'
 vim.g.floaterm_keymap_next = '<Leader>tl'
 vim.g.floaterm_keymap_toggle = '<Leader>tt'
+
+--------------------------Trouble keymaps----------------------------
+vim.keymap.set('n', '<leader>T', '<Cmd>TroubleToggle<CR>', {})
 
 ----------------------Markdown preview keymaps-----------------------
 vim.keymap.set('n', '<leader>m', '<Cmd>MarkdownPreviewToggle<CR>', {})
