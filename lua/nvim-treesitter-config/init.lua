@@ -9,7 +9,7 @@ require("nvim-treesitter.configs").setup{
     "yaml",
     "python",
     "make",
-    "markdown",
+    "markdown_inline",
     "latex",
     "json"
   },
