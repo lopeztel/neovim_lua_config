@@ -1,9 +1,12 @@
 # neovim_lua_config
+
 My Neovim config divided in multiple Lua files
 
 These files should be copied and pasted to `~/.config/nvim`
+
 ```bash
 .
+├── ginit.vim
 ├── init.lua
 ├── lua
 │   ├── barbar-config
@@ -45,6 +48,8 @@ These files should be copied and pasted to `~/.config/nvim`
 │   ├── toggleterm-config
 │   │   └── init.lua
 │   ├── transparent-config
+│   │   └── init.lua
+│   ├── trouble-config
 │   │   └── init.lua
 │   └── whichkey-config
 │       └── init.lua
