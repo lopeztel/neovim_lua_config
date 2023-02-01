@@ -30,6 +30,11 @@ return require('packer').startup(function(use)
     'nvim-lualine/lualine.nvim',
     wants = 'nvim-web-devicons'
   }
+  use { 'arkav/lualine-lsp-progress',
+    requires = {
+      'nvim-lualine/lualine.nvim',
+    },
+  }
   -- Pretty tabs
   use {
     'romgrk/barbar.nvim',
