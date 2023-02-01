@@ -45,9 +45,9 @@ set.hidden = true
 set.completeopt = 'menuone,noselect'
 
 -- Folding settings
-set.foldmethod = "expr"
-set.foldexpr = "nvim_treesitter#foldexpr()"
-set.foldenable = false
+-- set.foldmethod = "expr"
+-- set.foldexpr = "nvim_treesitter#foldexpr()"
+-- set.foldenable = false
 
 -- Folding commands:
 -- zo -> open fold
@@ -61,6 +61,9 @@ set.list = true
 set.listchars:append "trail:~"
 set.listchars:append "tab:»·"
 set.listchars:append "eol:↴"
+
+-- Markdown and Orgmode
+vim.opt.conceallevel = 2
 
 --Diagnostics
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }

@@ -148,6 +148,13 @@ use {
 
   -- Trouble
   use { 'folke/trouble.nvim' }
+	-- Org mode
+  use({
+    "nvim-orgmode/orgmode",
+    config = function()
+      require("orgmode").setup({})
+		end,
+	})
   -- Markdown preview
   use({
     "iamcco/markdown-preview.nvim",
