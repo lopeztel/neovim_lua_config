@@ -59,6 +59,9 @@ wk.register({
     -- name = "signature",
     -- h = { "help" },
   },
+  o = {
+    name = "orgmode",
+  }
 }, { prefix = "<leader>" })
 
 wk.register({
