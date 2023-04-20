@@ -9,25 +9,23 @@ require("mason").setup({
 })
 
 local language_servers = {
-  'sumneko_lua',
-  'clangd',
-  'bashls',
-  'pyright',
-  'marksman',
-  'yamlls',
-  'jsonls',
-  'cmake',
-  'lemminx',
-  'svls',
-}
+    'lua_ls',
+    'clangd',
+    'bashls',
+    'marksman',
+    'yamlls',
+    'jsonls',
+    'cmake',
+    'lemminx',
+  }
 
-require("mason-lspconfig").setup({
-  ensure_installed = language_servers,
-  automatic_installation = true,
-})
+  require("mason-lspconfig").setup({
+    ensure_installed = language_servers,
+    automatic_installation = true,
+  })
 
------------------------------------nvim-cmp--------------------------------------
-local cmp = require('cmp')
+  -----------------------------------nvim-cmp--------------------------------------
+  local cmp = require('cmp')
 -----------------------------------lspkind--------------------------------------
 local lspkind = require('lspkind')
 -----------------------------------null-ls--------------------------------------
@@ -50,7 +48,7 @@ require('mason-null-ls').setup({
 null_ls.setup{
   sources = null_ls_sources,
 }
-require 'mason-null-ls'.setup_handlers()
+-- require 'mason-null-ls'.setup_handlers()
 
 ----------------------------------autopairs-------------------------------------
 local cmp_autopairs = require('nvim-autopairs.completion.cmp')
