@@ -197,7 +197,12 @@ require("gruvbox").setup({
   undercurl = true,
   underline = true,
   bold = true,
-  italic = true,
+  italic = {
+    strings = true,
+    comments = true,
+    operators = false,
+    folds = true,
+  },
   strikethrough = true,
   invert_selection = false,
   invert_signs = false,
@@ -209,6 +214,15 @@ require("gruvbox").setup({
   overrides = {},
   dim_inactive = true,
   transparent_mode = false,
+})
+
+--TODO: Check if this needs to be removed
+-- Disable LSP semantic tokens by default to fix issue with theme colors https://github.com/shaunsingh/nord.nvim/issues/143
+vim.api.nvim_create_autocmd("LspAttach", {
+callback = function(args)
+local client = vim.lsp.get_client_by_id(args.data.client_id)
+client.server_capabilities.semanticTokensProvider = nil
+end,
 })
 
 vim.cmd('colorscheme nord')
