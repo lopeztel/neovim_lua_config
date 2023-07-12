@@ -182,7 +182,7 @@ local on_attach = function(client, bufnr)
 end
 
 local lsp_flags = {
-  debunce_text_changes = 150
+  debounce_text_changes = 150
 }
 
 for _, lsp in pairs(language_servers) do
