@@ -55,12 +55,28 @@ wk.register({
     l = { "list folders" },
   },
   s = {
-    "search",
+    name = "search"
     -- name = "signature",
     -- h = { "help" },
   },
   o = {
     name = "orgmode",
+  },
+  d = {
+    name = "Debugging",
+    c = {"continue"},
+    S = {"Step Over"},
+    s = {"Step Into"},
+    o = {"Step Out"},
+    b = {"Toggle Breakpoint"},
+    B = {"Set conditional Breakpoint"},
+    r = {"Toggle REPL"},
+    q = {"Close"},
+    t = {"Terminate"},
+    e = {"Evaluate"},
+    h = {"UI Hover"},
+    H = {"UI Scopes"},
+
   }
 }, { prefix = "<leader>" })
 

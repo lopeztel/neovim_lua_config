@@ -103,3 +103,19 @@ vim.keymap.set('n', '<leader>T', '<Cmd>TroubleToggle<CR>', {})
 
 ----------------------Markdown preview keymaps-----------------------
 vim.keymap.set('n', '<leader>m', '<Cmd>MarkdownPreviewToggle<CR>', {})
+
+----------------------nvim-dap heymaps-------------------------------
+vim.keymap.set('n', '<leader>dc', function() require('dap').continue() end)
+vim.keymap.set('n', '<leader>dS', function() require('dap').step_over() end)
+vim.keymap.set('n', '<leader>ds', function() require('dap').step_into() end)
+vim.keymap.set('n', '<leader>do', function() require('dap').step_out() end)
+vim.keymap.set('n', '<leader>db', function() require('dap').toggle_breakpoint() end)
+vim.keymap.set('n', '<leader>dB', function() require('dap').set_breakppoint(vim.fn.input "Breakpoint condition > ") end)
+vim.keymap.set('n', '<leader>dr', function() require('dap').repl.toggle() end)
+vim.keymap.set('n', '<leader>dq', function() require('dap').close() end)
+vim.keymap.set('n', '<leader>dt', function() require('dap').terminate() end)
+vim.keymap.set('n', '<leader>de', function() require('dapui').eval() end)
+vim.keymap.set('v', '<leader>de', function() require('dapui').eval() end)
+vim.keymap.set('n', '<leader>dh', function() require('dap.ui.widgets').hover() end)
+vim.keymap.set('n', '<leader>dH', function() require('dap.ui.widgets').scopes() end)
+vim.keymap.set('n', '<leader>dl', function() require('dap.ext.vscode').load_launchjs(nil, {cppdbg = {"cpp"}, coreclr = {"csharp"}}) end)
