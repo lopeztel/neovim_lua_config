@@ -45,9 +45,9 @@ set.hidden = true
 set.completeopt = 'menuone,noselect'
 
 -- Folding settings
--- set.foldmethod = "expr"
--- set.foldexpr = "nvim_treesitter#foldexpr()"
--- set.foldenable = false
+set.foldmethod = "expr"
+set.foldexpr = "nvim_treesitter#foldexpr()"
+set.foldenable = false
 
 -- Folding commands:
 -- zo -> open fold

@@ -72,11 +72,15 @@ wk.register({
     B = {"Set conditional Breakpoint"},
     r = {"Toggle REPL"},
     q = {"Close"},
-    t = {"Terminate"},
+    t = {"Toggle DAP UI"},
+    T = {"Terminate"},
     e = {"Evaluate"},
     h = {"UI Hover"},
     H = {"UI Scopes"},
-
+    l = {"Load .vscode/launch.json"},
+    a = {"Break on raised and uncaught exceptions"},
+    x = {"Close DAP UI"},
+    C = {"Clear all breakpoints"},
   }
 }, { prefix = "<leader>" })
 

@@ -17,6 +17,7 @@ local language_servers = {
     'jsonls',
     'cmake',
     'lemminx',
+    'csharp_ls',
   }
 
   require("mason-lspconfig").setup({
