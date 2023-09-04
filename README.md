@@ -29,11 +29,15 @@ These files should be copied and pasted to `~/.config/nvim`
 │   │   └── init.lua
 │   ├── nvim-comment-config
 │   │   └── init.lua
+│   ├── nvim-dap-config
+│   │   └── init.lua
 │   ├── nvim-notify-config
 │   │   └── init.lua
 │   ├── nvim-tree-config
 │   │   └── init.lua
 │   ├── nvim-treesitter-config
+│   │   └── init.lua
+│   ├── orgmode-config
 │   │   └── init.lua
 │   ├── plugins
 │   │   └── init.lua
@@ -53,5 +57,5 @@ These files should be copied and pasted to `~/.config/nvim`
 │   │   └── init.lua
 │   └── whichkey-config
 │       └── init.lua
-└── README.md
+├── README.md
 ```
