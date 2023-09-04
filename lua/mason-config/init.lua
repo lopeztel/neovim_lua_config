@@ -12,6 +12,7 @@ local language_servers = {
     'lua_ls',
     'clangd',
     'bashls',
+    'pylsp',
     'marksman',
     'yamlls',
     'jsonls',
@@ -41,7 +42,7 @@ local null_ls_sources = {
   null_ls.builtins.code_actions.gitsigns
 }
 require('mason-null-ls').setup({
-  ensure_installed = {"clang-format", "stylua", "cmake_lint", "cmake_format", "markdownlint"},
+  ensure_installed = {"clang-format", "stylua", "cmake_lint", "cmake_format", "markdownlint", "csharpier", "pylint"},
   automatic_installation = true,
   automatic_setup = true,
 })
